@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style-contact.css">
+    <link rel="stylesheet" href="assets/fonts/Karla-Italic-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="assets/fonts/Karla-VariableFont_wght.ttf">
+</head>
+<body>
+
+    <form>
+        <h2>Contact Us</h2>
+        <div class="container1">
+            <div>
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div>
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+        </div>
+
+        <div>
+          <label for="emailAddress">Email Address *</label>
+          <input type="email" id="emailAddress" name="emailAddress" required>
+        </div>
+
+
+        <div>
+          <label>Query Type *</label>
+          <div class="container2">
+              <div class="generalEnquiry">
+                <input type="radio" id="generalEnquiry" name="queryType" value="generalEnquiry" required>
+                <label for="generalEnquiry">General Enquiry</label>
+              </div>
+
+
+              <div class="supportRequest">
+                <input type="radio" id="supportRequest" name="queryType" value="supportRequest">
+                <label for="supportRequest">Support Request</label>
+              </div>
+          </div>
+
+
+
+
+
+
+
+          
+        </div>
+        <div>
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+
+
+        <div class="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I consent to being contacted by the team *</label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    
+</body>
+</html>
