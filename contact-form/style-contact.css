@@ -1,6 +1,9 @@
 
 body {
-  font-family: "Karla" ;
+
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
   font-style: normal;
   background-color: rgb(161, 174, 179);
   margin: 0;
