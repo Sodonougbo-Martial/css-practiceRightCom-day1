@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo img {
+    height: 40px; 
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation ul li a {
+        padding: 10px;
+    }
+}
+
+
+.section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+    background-color: gray;
+    height: 100%;
+    padding: 10px;
+
+    
+}
+
+
+
+.scroll-container {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.column1 {
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+    gap: 5;
+}
+
+.image-wrapper1 {
+    display: flex;
+    flex-direction: column;
+    animation: haut 10s linear infinite;
+    animation-iteration-count: infinite;
+
+
+}
+
+.image-wrapper1 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes haut {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
+
+.column2 {
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+    gap: 10;
+}
+
+.image-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    animation: bas 10s linear infinite;
+}
+
+.image-wrapper2 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@keyframes bas {
+    from{
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+
