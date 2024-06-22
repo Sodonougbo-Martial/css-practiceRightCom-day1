@@ -54,7 +54,7 @@ form {
   }
   
   button[type="submit"] {
-    background-color: #4CAF50;
+    background-color: hsl(169, 82%, 27%);
     color: white;
     padding: 12px 20px;
 
@@ -65,7 +65,7 @@ form {
   }
   
   button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: Green;
   }
 
 
@@ -92,24 +92,33 @@ form {
 
 }
 
+.consent label,
+.generalEnquiry label,
+.supportRequest label{
+  margin-bottom: 0;
+
+}
 
 
-
-.generalEnquiry, 
+.generalEnquiry,
 .supportRequest {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
-  padding: 10px;
   border: 1px solid #ccc;
+  padding: 0 10px;
+  gap: 10px;
   border-radius: 3px;
+  height: 35px;
+
 
 }
 
 .consent{
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 
